@@ -2,7 +2,7 @@ import argparse
 import json
 
 def merge_json_files(input_files, output_file):
-    result = list()
+    result = []
     for f1 in input_files:
         with open(f1, 'r') as infile:
             result.extend(json.load(infile))
